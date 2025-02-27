@@ -112,7 +112,7 @@ const removeUserList = (index) => {
       </div>
       <!-- Screen of Admin -->
       <div v-if="showScreenAdmin" class="bg-[#562731] w-140 h-80 rounded text-white max-sm:w-100 overflow-auto p-4">
-        <h2 class="text-center mb-4 text-[#FC515B]">Lista de Usuários</h2>
+        <h2 class="text-center mb-4 text-[#FC515B]">List of Users</h2>
         <div v-if="nameList.length === 0" class="text-center text-gray-300">
           None User
         </div>
