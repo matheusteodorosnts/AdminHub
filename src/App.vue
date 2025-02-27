@@ -83,10 +83,12 @@ const removeUserList = (index) => {
 
 <template>
   <div class="flex flex-row justify-center items-center min-h-screen">
-    <header>
+    <header class="absolute top-4 left-4">
       <div v-if="showScreenUser" id="invalidDiv" class="bg-[#FC515B] text-[#562731] absolute left-[-250px] bottom-150 flex flex-row rounded p-2 w-50 gap-2"><CircleX />Error!</div>
       <div v-if="showScreenUser" id="validDiv" class="bg-[#51FC5B] text-[#275631] absolute left-[-250px] bottom-150 flex flex-row rounded p-2 w-50 gap-2"><CircleCheck />Done!</div>
-      <button @click="toggleScreenSelectOption" v-if="!showScreenSelectOption" class="text-[#FC515B] cursor-pointer"><ArrowLeft /></button>
+      <button @click="toggleScreenSelectOption" v-if="!showScreenSelectOption" class="text-[#FC515B] cursor-pointer transition-colors p-2 rounded-full">
+        <ArrowLeft size="24" />
+      </button>
     </header>
     <main class="animate-fade-up">
       <!-- Screen of Select Option -->
@@ -121,7 +123,7 @@ const removeUserList = (index) => {
               <div><span class="text-[#FC515B]">Email:</span> {{ emailList[index] }}</div>
               <div><span class="text-[#FC515B]">Senha:</span> {{ passwordList[index] }}</div>
             </div>
-            <button @click="removeUserList(index)" class="text-[#FC515B] cursor-pointer">
+            <button @click="removeUserList(index)" class="text-[#FC515B] cursor-pointer hover:text-white">
               <Trash2 />
             </button>
           </div>
