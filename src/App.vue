@@ -114,7 +114,7 @@ const removeUserList = (index) => {
       <div v-if="showScreenAdmin" class="bg-[#562731] w-140 h-80 rounded text-white max-sm:w-100 overflow-auto p-4">
         <h2 class="text-center mb-4 text-[#FC515B]">Lista de Usuários</h2>
         <div v-if="nameList.length === 0" class="text-center text-gray-300">
-          Nenhum usuário cadastrado
+          None User
         </div>
         <div v-else>
           <div v-for="(name, index) in nameList" :key="index" class="flex justify-between items-center mb-2 border-b border-[#FC515B] pb-2">
