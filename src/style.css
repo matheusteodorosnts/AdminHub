@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+* {
+    font-family: "Lexend", serif;
+}
+
+body {
+    overflow-x: hidden;
+}
